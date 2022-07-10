@@ -53,12 +53,12 @@ var scrollWindow = function() {
                 navbar = $('.ftco_navbar'),
                 sd = $('.js-scroll-wrap');
 
-        if (st > 50) {
+        if (st > 80) {
             if ( !navbar.hasClass('scrolled') ) {
                 navbar.addClass('scrolled');	
             }
         } 
-        if (st < 50) {
+        if (st < 80) {
             if ( navbar.hasClass('scrolled') ) {
                 navbar.removeClass('scrolled sleep');
             }
@@ -118,3 +118,5 @@ $('.scrollup').click(function () {
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
 });
+
+
