@@ -1,4 +1,9 @@
 
+
+$('.dropdown').hover(function(){ 
+    $('.dropdown-toggle', this).trigger('click'); 
+});
+
 $('.img-parallax').each(function(){
     var imgThis = $(this);
     var imgParent = $(this).parent();
@@ -37,6 +42,8 @@ $('.img-parallax').each(function(){
 
 
 var fullHeight = function() {
+    var ftcoNavHigt = $('.ftco_navbar').innerHeight();
+    console.log(ftcoNavHigt);
     $('.js-fullheight').css('height', $(window).height());
     $(window).resize(function(){
         $('.js-fullheight').css('height', $(window).height());
@@ -172,7 +179,7 @@ $('.scrollup').click(function () {
 
 
 var perWid = $(".perpendicular").width()/2.2;
-console.log(perWid);
+// console.log(perWid);
 $(".perpendicular").css({
     // top: perWid + '%',
     transform: 'translate(-50%, ' + perWid + '%)' + ' rotate(-90deg) '
@@ -185,3 +192,4 @@ $(window).on('load', function () {
     /* setTimeout(function () {
     }, 2000); */
 });
+
