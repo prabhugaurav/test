@@ -81,6 +81,47 @@
                         </ul>
                         <p class="lead"><strong>1003 community women visited and benefitted through this “Aarogya Mela”.</strong></p>
                     </div>
+                    <div class="clearfix"> <br> </div>
+                    <div class="clearfix">
+                        <div class="focusable-gallery clearfix" id="lightgallery">
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-01.jpg" data-sub-html="<h4>Nutrition Exhibition Image 1</h4>">
+                                <img src="assets/img/event/womens-day/img-01.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-02.jpg" data-sub-html="<h4>Nutrition Exhibition Image 2</h4>">
+                                <img src="assets/img/event/womens-day/img-02.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-03.jpg" data-sub-html="<h4>Nutrition Exhibition Image 3</h4>">
+                                <img src="assets/img/event/womens-day/img-03.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-04.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/womens-day/img-04.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-05.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/womens-day/img-05.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-06.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/womens-day/img-06.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-07.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/womens-day/img-07.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-08.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/womens-day/img-08.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-09.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/womens-day/img-09.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-10.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/womens-day/img-10.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/womens-day/img-11.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/womens-day/img-11.jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="clearfix">
+                            <small class="font-600 mt-2"><em>Click on photos</em></small>
+                        </div>
+                    </div>
                     <hr>
                 </div>
             </section>
@@ -93,6 +134,28 @@
         <!-- <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> -->
 		<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <!-- lightgallery plugins -->
+        <script src="assets/plugins/lightGallery/lightgallery.umd.js"></script>
+        <script src="assets/plugins/lightGallery/lightgallery.min.js"></script>
+        <script src="assets/plugins/lightGallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+        <script src="assets/plugins/lightGallery/plugins/zoom/lg-zoom.umd.js"></script>
+        <script type="text/javascript">
+            window.lightGallery(
+                document.getElementById("lightgallery"),{
+                    plugins: [lgZoom, lgThumbnail],
+                    speed: 500,
+                    mobileSettings: {
+                        controls: true,
+                        showCloseIcon: true,
+                        download: false,
+                        rotate: true,
+                        animateThumb: true,
+                        zoomFromOrigin: true,
+                        toggleThumb: true
+                    }
+                }
+            );
+        </script>
 		<!-- Option 2: Separate Popper and Bootstrap JS -->
 		<!--
 			<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>

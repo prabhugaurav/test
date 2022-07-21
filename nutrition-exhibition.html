@@ -74,6 +74,35 @@
                         <p class="lead">A colourful IEC exhibits on various aspects of good and healthy nutrition were displayed during this event. There were various posters depicting important messages on nutrition, prevention of vitamin deficiency disorders, IYCF (Infant and young children feeding practices) were displayed in the exhibition.</p>
                         <p class="lead"><strong>430 community people visited this exhibition.</strong></p>
                     </div>
+                    <div class="clearfix"> <br> </div>
+                    <div class="clearfix">
+                        <div class="focusable-gallery clearfix" id="lightgallery">
+                            <a class="focusable-list-item" data-src="assets/img/event/nutrition-exihibition/img-01.jpg" data-sub-html="<h4>Nutrition Exhibition Image 1</h4>">
+                                <img src="assets/img/event/nutrition-exihibition/img-01.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/nutrition-exihibition/img-02.jpg" data-sub-html="<h4>Nutrition Exhibition Image 2</h4>">
+                                <img src="assets/img/event/nutrition-exihibition/img-02.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/nutrition-exihibition/img-03.jpg" data-sub-html="<h4>Nutrition Exhibition Image 3</h4>">
+                                <img src="assets/img/event/nutrition-exihibition/img-03.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/nutrition-exihibition/img-04.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/nutrition-exihibition/img-04.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/nutrition-exihibition/img-05.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/nutrition-exihibition/img-05.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/nutrition-exihibition/img-06.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/nutrition-exihibition/img-06.jpg" class="img-fluid" alt="">
+                            </a>
+                            <a class="focusable-list-item" data-src="assets/img/event/nutrition-exihibition/img-07.jpg" data-sub-html="<h4>Nutrition Exhibition Image 4</h4>">
+                                <img src="assets/img/event/nutrition-exihibition/img-06.jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="clearfix">
+                            <small class="font-600 mt-2"><em>Click on photos</em></small>
+                        </div>
+                    </div>
                     <hr>
                 </div>
             </section>
@@ -86,6 +115,28 @@
         <!-- <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script> -->
 		<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <!-- lightgallery plugins -->
+        <script src="assets/plugins/lightGallery/lightgallery.umd.js"></script>
+        <script src="assets/plugins/lightGallery/lightgallery.min.js"></script>
+        <script src="assets/plugins/lightGallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+        <script src="assets/plugins/lightGallery/plugins/zoom/lg-zoom.umd.js"></script>
+        <script type="text/javascript">
+            window.lightGallery(
+                document.getElementById("lightgallery"),{
+                    plugins: [lgZoom, lgThumbnail],
+                    speed: 500,
+                    mobileSettings: {
+                        controls: true,
+                        showCloseIcon: true,
+                        download: false,
+                        rotate: true,
+                        animateThumb: true,
+                        zoomFromOrigin: true,
+                        toggleThumb: true
+                    }
+                }
+            );
+        </script>
 		<!-- Option 2: Separate Popper and Bootstrap JS -->
 		<!--
 			<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
