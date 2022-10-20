@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap 101 Template</title>
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+	    <link rel="stylesheet" href="dist/simple-lightbox.css" />
+	    <style>
+	        body {
+	            font-family: 'Raleway', sans-serif;
+	            font-size: 20px;
+	            line-height: 34px;
+	        }
+
+	        * {
+	            box-sizing: border-box;
+	        }
+
+	        /*.container .gallery a.item {display: block;}*/
+	        .container .gallery a img {
+	            border: 2px solid #fff;
+	            -webkit-transition: -webkit-transform .15s ease;
+	            -moz-transition: -moz-transform .15s ease;
+	            -o-transition: -o-transform .15s ease;
+	            -ms-transition: -ms-transform .15s ease;
+	            transition: transform .15s ease;
+	            position: relative;
+	        }
+
+	        .clear {
+	            clear: both;
+	        }
+
+	        a {
+	            color: #009688;
+	            text-decoration: none;
+	        }
+
+	        a:hover {
+	            color: #01695f;
+	            text-decoration: none;
+	        }
+	        .mr-0 {margin-right: 0 !important;}
+	        .pr-0 {padding-right: 0 !important;}
+	        .nav-tabs-fixed {}
+	        .nav-tabs-fixed .nav-tabs {border-bottom: none;}
+	        .nav-tabs-fixed .nav-tabs>li {float: none;}
+	        .nav-tabs-fixed .nav-tabs>li>a {font-size: 15px;font-weight: 600;border: none;color: #000000;}
+	        .nav-tabs-fixed .nav-tabs>li.active>a,
+	        .nav-tabs-fixed .nav-tabs>li.active>a:focus,
+	        .nav-tabs-fixed .nav-tabs>li.active>a:hover {border: none;background-color: #5bc0de;color: #fff;}
+	        .nav-tabs-wrap {position: fixed;top: 0;right: -135px;width: auto;height: 100%;background-color: #fff;}
+	        .nav-tabs-wrap:hover {}
+	        .btn-setting {position: fixed;top: 80px;right: 0px;}
+	        .btn-setting:hover ~ .nav-tabs-wrap,
+	        .btn-setting:focus ~ .nav-tabs-wrap,
+	        .nav-tabs-wrap:hover {right: 0;}
+	    </style>
+	</head>
+	<body>
+			<div class="nav-tabs-fixed">
+				<button class="btn btn-info btn-setting">
+					<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+				</button>
+				<div class="nav-tabs-wrap">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+						<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+						<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+						<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="home">
+					<img src="img/slide/01.jpg" class="img-responsive" alt="" title=""/>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="profile">
+					<img src="img/slide/02.jpg" class="img-responsive" alt="" title=""/>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="messages">
+					<img src="img/slide/03.jpg" class="img-responsive" alt="" title=""/>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="settings">
+					<img src="img/slide/04.jpg" class="img-responsive" alt="" title=""/>
+				</div>
+			</div>
+
+		<div class="container">
+			<!-- <div class="row mr-0">
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/01.jpg" class="item"><img src="img/slide/01.jpg" class="img-responsive" alt="" title="Landing Screen"/></a>
+				</div>
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/02.jpg" class="item"><img src="img/slide/02.jpg" class="img-responsive" alt="" title="Screen 2"/></a>
+				</div>
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/03.jpg" class="item"><img src="img/slide/03.jpg" class="img-responsive" alt="" title="Filter Screen"/></a>
+				</div>
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/04.jpg" class="item"><img src="img/slide/04.jpg" class="img-responsive" alt="" title="Approval Menu"/></a>
+				</div>
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/05.jpg" class="item"><img src="img/slide/05.jpg" class="img-responsive" alt="" title="Table"/></a>
+				</div>
+			</div> -->
+			<!-- <div class="gallery">
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/01.jpg" class="item"><img src="img/slide/01.jpg" class="img-responsive" alt="" title="Landing Screen"/></a>
+				</div>
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/02.jpg" class="item"><img src="img/slide/02.jpg" class="img-responsive" alt="" title="Screen 2"/></a>
+				</div>
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/03.jpg" class="item"><img src="img/slide/03.jpg" class="img-responsive" alt="" title="Filter Screen"/></a>
+				</div>
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/04.jpg" class="item"><img src="img/slide/04.jpg" class="img-responsive" alt="" title="Approval Menu"/></a>
+				</div>
+				<div class="col-sm-3 pr-0">
+					<a href="img/slide/05.jpg" class="item"><img src="img/slide/05.jpg" class="img-responsive" alt="" title="Table"/></a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<br> -->
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+		<script src="dist/simple-lightbox.js"></script>
+		<script>
+			(function() {
+				var $gallery = new SimpleLightbox('.gallery a', {});
+			})();
+		</script>
+	</body>
+</html>
